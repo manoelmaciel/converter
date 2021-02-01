@@ -1,14 +1,13 @@
 # Currency converter with React
-#### -----------------------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Following the video lesson below:
 
-> React JS - Criando um App do Zero - Programador Br
+React JS - Criando um App do Zero - Programador Br
 
-> [link para o vídeo](https://www.youtube.com/watch?v=tbLziJchz48)
+[Link para o vídeo](https://www.youtube.com/watch?v=tbLziJchz48)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
