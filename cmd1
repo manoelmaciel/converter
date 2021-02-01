@@ -1,0 +1,284 @@
+29/01/2021 - 19:49 
+
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ npx create-react-app conversor
+npx: instalou 67 em 15.977s
+
+Creating a new React app in /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+yarn add v1.22.10
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+error postcss@8.1.9: The engine "node" is incompatible with this module. Expected version "^10 || ^12 || >=14". Got "13.7.0"
+error Found incompatible module.
+info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.
+
+Aborting installation.
+  yarnpkg add --exact react react-dom react-scripts cra-template --cwd /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor has failed.
+
+Deleting generated file... package.json
+Deleting generated file... yarn.lock
+Deleting conversor/ from /home/manoel/Desktop/estudos/JavaScript/React/conversor
+Done.
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ node -v
+v13.7.0
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ nvm
+
+Node Version Manager (v0.35.2)
+
+Note: <version> refers to any version-like string nvm understands. This includes:
+  - full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)
+  - default (built-in) aliases: node, stable, unstable, iojs, system
+  - custom aliases you define with `nvm alias foo`
+
+ Any options that produce colorized output should respect the `--no-colors` option.
+
+Usage:
+  nvm --help                                Show this message
+  nvm --version                             Print out the installed version of nvm
+  nvm install [-s] <version>                Download and install a <version>, [-s] from source. Uses .nvmrc if available
+    --reinstall-packages-from=<version>     When installing, reinstall packages installed in <node|iojs|node version number>
+    --lts                                   When installing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When installing, only select from versions for a specific LTS line
+    --skip-default-packages                 When installing, skip the default-packages file if it exists
+    --latest-npm                            After installing, attempt to upgrade to the latest working npm on the given node version
+    --no-progress                           Disable the progress bar on any downloads
+  nvm uninstall <version>                   Uninstall a version
+  nvm uninstall --lts                       Uninstall using automatic LTS (long-term support) alias `lts/*`, if available.
+  nvm uninstall --lts=<LTS name>            Uninstall using automatic alias for provided LTS line, if available.
+  nvm use [--silent] <version>              Modify PATH to use <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm exec [--silent] <version> [<command>] Run <command> on <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm run [--silent] <version> [<args>]     Run `node` on <version> with <args> as arguments. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm current                               Display currently activated version of Node
+  nvm ls [<version>]                        List installed versions, matching a given <version> if provided
+    --no-colors                             Suppress colored output
+    --no-alias                              Suppress `nvm alias` output
+  nvm ls-remote [<version>]                 List remote versions available for install, matching a given <version> if provided
+    --lts                                   When listing, only show LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only show versions for a specific LTS line
+    --no-colors                             Suppress colored output
+  nvm version <version>                     Resolve the given description to a single local version
+  nvm version-remote <version>              Resolve the given description to a single remote version
+    --lts                                   When listing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only select from versions for a specific LTS line
+  nvm deactivate                            Undo effects of `nvm` on current shell
+  nvm alias [<pattern>]                     Show all aliases beginning with <pattern>
+    --no-colors                             Suppress colored output
+  nvm alias <name> <version>                Set an alias named <name> pointing to <version>
+  nvm unalias <name>                        Deletes the alias named <name>
+  nvm install-latest-npm                    Attempt to upgrade to the latest working `npm` on the current node version
+  nvm reinstall-packages <version>          Reinstall global `npm` packages contained in <version> to current version
+  nvm unload                                Unload `nvm` from shell
+  nvm which [current | <version>]           Display path to installed node version. Uses .nvmrc if available
+  nvm cache dir                             Display path to the cache directory for nvm
+  nvm cache clear                           Empty cache directory for nvm
+
+Example:
+  nvm install 8.0.0                     Install a specific version number
+  nvm use 8.0                           Use the latest available 8.0.x release
+  nvm run 6.10.3 app.js                 Run app.js using node 6.10.3
+  nvm exec 4.8.3 node app.js            Run `node app.js` with the PATH pointing to node 4.8.3
+  nvm alias default 8.1.0               Set default node version on a shell
+  nvm alias default node                Always default to the latest available node version on a shell
+
+Note:
+  to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
+
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ nvm ls
+->      v13.7.0
+       v14.15.4
+         system
+default -> 13.7.0 (-> v13.7.0)
+node -> stable (-> v14.15.4) (default)
+stable -> 14.15 (-> v14.15.4) (default)
+iojs -> N/A (default)
+unstable -> N/A (default)
+lts/* -> lts/fermium (-> v14.15.4)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.23.1 (-> N/A)
+lts/erbium -> v12.20.1 (-> N/A)
+lts/fermium -> v14.15.4
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ nvm default 14.15.4
+
+Node Version Manager (v0.35.2)
+
+Note: <version> refers to any version-like string nvm understands. This includes:
+  - full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)
+  - default (built-in) aliases: node, stable, unstable, iojs, system
+  - custom aliases you define with `nvm alias foo`
+
+ Any options that produce colorized output should respect the `--no-colors` option.
+
+Usage:
+  nvm --help                                Show this message
+  nvm --version                             Print out the installed version of nvm
+  nvm install [-s] <version>                Download and install a <version>, [-s] from source. Uses .nvmrc if available
+    --reinstall-packages-from=<version>     When installing, reinstall packages installed in <node|iojs|node version number>
+    --lts                                   When installing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When installing, only select from versions for a specific LTS line
+    --skip-default-packages                 When installing, skip the default-packages file if it exists
+    --latest-npm                            After installing, attempt to upgrade to the latest working npm on the given node version
+    --no-progress                           Disable the progress bar on any downloads
+  nvm uninstall <version>                   Uninstall a version
+  nvm uninstall --lts                       Uninstall using automatic LTS (long-term support) alias `lts/*`, if available.
+  nvm uninstall --lts=<LTS name>            Uninstall using automatic alias for provided LTS line, if available.
+  nvm use [--silent] <version>              Modify PATH to use <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm exec [--silent] <version> [<command>] Run <command> on <version>. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm run [--silent] <version> [<args>]     Run `node` on <version> with <args> as arguments. Uses .nvmrc if available
+    --lts                                   Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                        Uses automatic alias for provided LTS line, if available.
+  nvm current                               Display currently activated version of Node
+  nvm ls [<version>]                        List installed versions, matching a given <version> if provided
+    --no-colors                             Suppress colored output
+    --no-alias                              Suppress `nvm alias` output
+  nvm ls-remote [<version>]                 List remote versions available for install, matching a given <version> if provided
+    --lts                                   When listing, only show LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only show versions for a specific LTS line
+    --no-colors                             Suppress colored output
+  nvm version <version>                     Resolve the given description to a single local version
+  nvm version-remote <version>              Resolve the given description to a single remote version
+    --lts                                   When listing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                        When listing, only select from versions for a specific LTS line
+  nvm deactivate                            Undo effects of `nvm` on current shell
+  nvm alias [<pattern>]                     Show all aliases beginning with <pattern>
+    --no-colors                             Suppress colored output
+  nvm alias <name> <version>                Set an alias named <name> pointing to <version>
+  nvm unalias <name>                        Deletes the alias named <name>
+  nvm install-latest-npm                    Attempt to upgrade to the latest working `npm` on the current node version
+  nvm reinstall-packages <version>          Reinstall global `npm` packages contained in <version> to current version
+  nvm unload                                Unload `nvm` from shell
+  nvm which [current | <version>]           Display path to installed node version. Uses .nvmrc if available
+  nvm cache dir                             Display path to the cache directory for nvm
+  nvm cache clear                           Empty cache directory for nvm
+
+Example:
+  nvm install 8.0.0                     Install a specific version number
+  nvm use 8.0                           Use the latest available 8.0.x release
+  nvm run 6.10.3 app.js                 Run app.js using node 6.10.3
+  nvm exec 4.8.3 node app.js            Run `node app.js` with the PATH pointing to node 4.8.3
+  nvm alias default 8.1.0               Set default node version on a shell
+  nvm alias default node                Always default to the latest available node version on a shell
+
+Note:
+  to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
+
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ nvm alias default 14.15.4
+default -> 14.15.4 (-> v14.15.4)
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ nvm use default
+Now using node v14.15.4 (npm v6.14.10)
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ npx create-react-app conversor
+npx: instalou 67 em 7.896s
+
+Creating a new React app in /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+> core-js@2.6.12 postinstall /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@3.8.3 postinstall /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.3 postinstall /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor/node_modules/ejs
+> node ./postinstall.js
+
++ react@17.0.1
++ cra-template@1.1.1
++ react-dom@17.0.1
++ react-scripts@4.0.1
+added 1901 packages from 722 contributors and audited 1904 packages in 167.176s
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Initialized a git repository.
+
+Installing template dependencies using npm...
+npm WARN tsutils@3.20.0 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.1 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ @testing-library/user-event@12.6.2
++ web-vitals@0.2.4
++ @testing-library/jest-dom@5.11.9
++ @testing-library/react@11.2.3
+added 29 packages from 78 contributors and audited 1933 packages in 19.961s
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Removing template package using npm...
+
+npm WARN tsutils@3.20.0 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.1 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+removed 1 package and audited 1932 packages in 11.221s
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Created git commit.
+
+Success! Created conversor at /home/manoel/Desktop/estudos/JavaScript/React/conversor/conversor
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd conversor
+  npm start
+
+Happy hacking!
+manoel@worknote:~/Desktop/estudos/JavaScript/React/conversor$ 
+
