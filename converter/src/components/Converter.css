@@ -1,3 +1,20 @@
 header h1 {
     padding: 30px;
 }
+
+.converter {
+	padding: 20px;
+	max-width: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.linha {
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-around;
+}
+
+.App {
+	margin: auto;
+	max-width: 900px;
+}

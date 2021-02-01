@@ -31,9 +31,9 @@ class Converter extends Component {
     })
 
     .then(json => {
-      console.log(json)
+      // console.log(json)
       let quotation = json[from_to].val;
-      // console.log(currencyB_value)
+      // console.slog(currencyB_value)
       let currencyB_value = (parseFloat(this.state.currencyA_value) * quotation).toFixed(2);
       // console.log(currencyB_value)
       this.setState({currencyB_value});
@@ -43,10 +43,7 @@ class Converter extends Component {
 
   render() {
     return (
-      <div className="Converter">
-        <header>
-          <h1>Converter</h1>
-        </header>
+      <div className="converter">
         <h2>From {this.props.currencyA} to {this.props.currencyB}</h2>
         <input type="text" onChange={(event) => {this.setState({currencyA_value:event.target.value})}}></input>
         <input type="button" onClick={this.toConvert} value="To convert"></input>
